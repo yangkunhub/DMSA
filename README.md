@@ -61,19 +61,18 @@ data/
 #Run and evaluation(Note that you need to use the pre-generated initial pseudo-mask)
 
 # MSCOCO 80
-```bash
 #  train model
+```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python coco_trainval.py -F train/coco with dataset.num_workers=32 model.decoder.n_things=80
 ```
 #  evaluate COCO-80:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python coco_trainval.py -F eval/coco_80 with eval_only=1 model.decoder.n_things=80 model.decoder.pretrained_weight=train/coco/(number)/decoder_best.pt
 ```
-#  PascalVOC 2012
 
+#  PascalVOC 2012
 #  train model
 ```bash
-#  train model
 CUDA_VISIBLE_DEVICES=0,1,2,3 python pascalvoc_trainval.py -F train/pascalvoc with dataset.num_workers=32
 ```
 #  evaluate PascalVOC 2012
@@ -82,10 +81,8 @@ CUDA_VISIBLE_DEVICES=0 python pascalvoc_trainval.py -F eval/pascalvoc with eval_
 ```
 
 #  PascalVOC 2012 AUG
-
 #  train model
 ```bash
-#  train model
 CUDA_VISIBLE_DEVICES=0,1,2,3 python pascalvoc_aug_trainval.py -F train/pascalvoc with dataset.num_workers=32
 ```
 #  evaluate PascalVOC 2012 AUG
