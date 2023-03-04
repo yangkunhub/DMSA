@@ -56,7 +56,7 @@ data/
 ## Model download
 - please download the pretrained [dino model (deit small 8x8/16*16)](https://dl.fbaipublicfiles.com/dino/dino_deitsmall8_pretrain/dino_deitsmall8_pretrain.pth), then place it into `root/weight/dino/` 
 - download trained model from [Google Drive](https://drive.google.com/drive/folders/1vHKLrAE51mLTK-5DpzByQ_g1RAjmONyi?usp=sharing) or [Baidu Netdisk (code:1118)](https://pan.baidu.com/s/1N7GSzcMOi9C3mgpUsIa4oA), then place them into `root/weight/trained/` 
-```
+
 
 #Run and evaluation(Note that you need to use the pre-generated initial pseudo-mask)
  
