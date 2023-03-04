@@ -17,7 +17,7 @@ conda activate DMSA
 
 - PascalVOC Dataset: Download [training/validation data](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar), place the extracted files into `root/data/PascalVOC`.
 
-- SBD Dataset: Download [training/validation data](http://home.bharathh.info/pubs/codes/SBD/download.html), Used to expand the VOC data set.
+- SBD Dataset: Download [training](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz), Used to expand the VOC 2012 dataset.
 
 
 ## PascalVOC_AUG dataset making
