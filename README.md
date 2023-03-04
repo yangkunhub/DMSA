@@ -8,27 +8,28 @@
 
 Create the environment
 
-```bash
 # create conda env
-conda create -n TransFGU python=3.8
+conda env create -f environment.yaml
 # activate conda env
-conda activate TransFGU
-# install pytorch
-conda install pytorch=1.8 torchvision cudatoolkit=10.1
-# install other dependencies
-pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.8.0/index.html
-pip install -r requirements.txt
+conda activate DMSA
+
+
+
 ```
 
 ## Dataset Preparation
 
 - MS-COCO Dataset: Download the [trainset](http://images.cocodataset.org/zips/train2017.zip), [validset](http://images.cocodataset.org/zips/val2017.zip), [annotations](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip) and the [json files](http://images.cocodataset.org/annotations/annotations_trainval2017.zip), place the extracted files into `root/data/MSCOCO`.
 - PascalVOC Dataset: Download [training/validation data](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar), place the extracted files into `root/data/PascalVOC`.
-- Cityscapes Dataset: Download [leftImg8bit_trainvaltest.zip](http://images.cocodataset.org/zips/train2017.zip) and [gtFine_trainvaltest.zip](http://images.cocodataset.org/zips/val2017.zip), place the extracted files into `root/data/Cityscapes`.
-- LIP Dataset: Download [TrainVal_images.zip](https://drive.google.com/file/d/0BzvH3bSnp3E9cVl3b3pKdmFlclE/view?usp=sharing&resourcekey=0-0crLyOF_Tj-hPDLS89DtqA) and [TrainVal_parsing_annotations.zip](https://drive.google.com/file/d/15tifhBogDs_oBUKaUf362vzZTlIdzktv/view?usp=sharing), place the extracted files into `root/data/LIP`.
+
+- SBD Dataset: Download [training/validation data](http://home.bharathh.info/pubs/codes/SBD/download.html
+), place the extracted files into `root/data/PascalVOC`.
 
 the structure of dataset folders should be as follow:
 ~~~
+
+
+
 data/
     │── MSCOCO/
     │     ├── images/
@@ -39,21 +40,7 @@ data/
     │           ├── val2017/
     │           ├── instances_train2017.json
     │           └── instances_val2017.json
-    │── Cityscapes/
-    │     ├── leftImg8bit/
-    │     │     ├── train/
-    │     │     │       ├── aachen
-    │     │     │       └── ...
-    │     │     └──── val/
-    │     │             ├── frankfurt
-    │     │             └── ...
-    │     └── gtFine/
-    │           ├── train/
-    │           │       ├── aachen
-    │           │       └── ...
-    │           └──── val/
-    │                   ├── frankfurt
-    │                   └── ...
+    │
     │── PascalVOC/
     │     ├── JPEGImages/
     │     ├── SegmentationClass/
