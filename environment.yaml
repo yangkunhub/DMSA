@@ -178,4 +178,4 @@ dependencies:
     - yapf==0.32.0
     - zc-lockfile==2.0
     - zipp==3.8.0
-prefix: /usr/local/anaconda3/envs/TransFGU
+prefix: /usr/local/anaconda3/envs/DMSA
