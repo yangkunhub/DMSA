@@ -59,9 +59,8 @@ data/
 - download trained model from [Google Drive](https://drive.google.com/drive/folders/1vHKLrAE51mLTK-5DpzByQ_g1RAjmONyi?usp=sharing) or [Baidu Netdisk (code:1118)](https://pan.baidu.com/s/1N7GSzcMOi9C3mgpUsIa4oA), then place them into `root/weight/trained/` 
 
 #Run and evaluation(Note that you need to use the pre-generated initial pseudo-mask)
-
-# MSCOCO 80
-#  train model
+ 
+#  Train on MSCOCO 80
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python coco_trainval.py -F train/coco with dataset.num_workers=32 model.decoder.n_things=80
 ```
@@ -70,8 +69,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python coco_trainval.py -F train/coco with dataset.
 CUDA_VISIBLE_DEVICES=0 python coco_trainval.py -F eval/coco_80 with eval_only=1 model.decoder.n_things=80 model.decoder.pretrained_weight=train/coco/(number)/decoder_best.pt
 ```
 
-#  PascalVOC 2012
-#  train model
+#  train on PascalVOC 2012
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python pascalvoc_trainval.py -F train/pascalvoc with dataset.num_workers=32
 ```
@@ -80,8 +78,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python pascalvoc_trainval.py -F train/pascalvoc wit
 CUDA_VISIBLE_DEVICES=0 python pascalvoc_trainval.py -F eval/pascalvoc with eval_only=1 model.decoder.n_things=20 model.decoder.pretrained_weight=train/pascalvoc/(number)/decoder_best.pt
 ```
 
-#  PascalVOC 2012 AUG
-#  train model
+#  train on PascalVOC 2012 AUG
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python pascalvoc_aug_trainval.py -F train/pascalvoc with dataset.num_workers=32
 ```
