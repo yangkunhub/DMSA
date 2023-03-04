@@ -4,11 +4,11 @@
 
 [[Preprint](https://arxiv.org/abs/2303.00199)]
 
+```bash
 # create conda env
 conda env create -f environment.yaml
 # activate conda env
 conda activate DMSA
-
 ```
 
 ## Dataset Preparation
@@ -17,7 +17,7 @@ conda activate DMSA
 
 - PascalVOC Dataset: Download [training/validation data](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar), place the extracted files into `root/data/PascalVOC`.
 
-- SBD Dataset: Download [training/validation data](http://home.bharathh.info/pubs/codes/SBD/download.html), place the extracted files into `root/data/SBD`.
+- SBD Dataset: Download [training/validation data](http://home.bharathh.info/pubs/codes/SBD/download.html), Used to expand the VOC data set.
 
 
 ## PascalVOC_AUG dataset making
@@ -26,7 +26,6 @@ conda activate DMSA
 
 the structure of dataset folders should be as follow:
 ~~~
-
 data/
     │── MSCOCO/
     │     ├── images/
@@ -52,7 +51,7 @@ data/
                └── Segmentation/
                        ├── train.txt
                        └── val.txt
-
+~~~
 
 ## Model download
 - please download the pretrained [dino model (deit small 8x8/16*16)](https://dl.fbaipublicfiles.com/dino/dino_deitsmall8_pretrain/dino_deitsmall8_pretrain.pth), then place it into `root/weight/dino/` 
