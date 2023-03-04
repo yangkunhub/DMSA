@@ -1,13 +1,8 @@
-# TransFGU: A Top-down Approach to Fine-Grained Unsupervised Semantic Segmentation
-[Zhaoyun Yin](https://github.com/zyy-cn),
-[Pichao Wang](https://sites.google.com/site/pichaossites/),
-[Fan Wang](https://scholar.google.com/citations?user=WCRGTHsAAAAJ&hl=en),
-Xianzhe Xu,
-[Hanling Zhang](http://design.hnu.edu.cn/info/1023/5767.htm),
-[Hao Li](https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=zh-CN),
-[Rong Jin](https://scholar.google.com/citations?user=CS5uNscAAAAJ&hl=zh-CN)
+# DMSA: Dynamic Multi-scale Unsupervised Semantic Segmentation Based on Adaptive Affinity
+[Kun Yang](https://github.com/yangkunhub),
 
-[[Preprint](https://arxiv.org/abs/2112.01515)]
+
+[[Preprint](https://arxiv.org/abs/2303.00199)]
 
 ## Getting Started
 
